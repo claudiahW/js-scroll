@@ -11,6 +11,13 @@ date.innerHTML = new Date().getFullYear();
 const navToggle = document.querySelector(".nav-toggle");
 const linksContainer = document.querySelector(".links-container");
 const links = document.querySelector(".links");
+
+// add eventlistener to listen for a click
+navToggle.addEventListener("click", function(){
+   const containerHeight = linksContainer.getBoundingClientRect ();
+   const linksHeight = links.getBoundingClientRect().height;
+})
+
 // ********** fixed navbar ************
 
 // ********** smooth scroll ************
