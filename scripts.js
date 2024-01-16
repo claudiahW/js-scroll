@@ -36,7 +36,20 @@ window.addEventListener("scroll", function(){
    else{
       navbar.classList.remove("fixed-nav");
    }
-});
+}); 
+
+
 // ********** smooth scroll ************
 // select links
+const scrollLinks = document.querySelector(".scroll-link");
 
+scrollLinks.forEach(function (link)) {
+   link.addEventListener("click", function(e) {
+      // prevent default
+   e.preventDefault();
+   // navigate to specific spot 
+   const id = e.currentTarget.getAttribute("href").slice(1);
+
+   });
+
+};
